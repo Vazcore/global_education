@@ -1,0 +1,7 @@
+
+<ion-fab top right edge *ngIf="loggedIn" class="header_profile">
+  <button ion-fab mini><ion-icon name="options"></ion-icon></button>
+  <ion-fab-list>    
+    <button ion-fab (click)="logout()"><ion-icon name="log-out"></ion-icon></button>
+  </ion-fab-list>      
+</ion-fab>

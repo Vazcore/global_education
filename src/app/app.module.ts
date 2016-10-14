@@ -5,13 +5,21 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { LoginPage } from '../pages/login/login';
+import { LoginService } from '../pages/login/login.service';
+import { PageService } from '../pages/page.service';
+import { Header } from './header/header';
+import { Footer } from './footer/footer';
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
+    LoginPage,
     HomePage,
+    Header,
+    Footer,
     TabsPage
   ],
   imports: [
@@ -22,9 +30,12 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     AboutPage,
     ContactPage,
+    LoginPage,
     HomePage,
+    Header,
+    Footer,
     TabsPage
   ],
-  providers: []
+  providers: [LoginService, PageService]
 })
 export class AppModule {}
